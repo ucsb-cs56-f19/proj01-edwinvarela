@@ -3,7 +3,7 @@ A simple Spring Boot webapp using:
 * Pulling in Bootstrap from CDN.
 * Github OAuth
 
-repo name: https://github.com/edwinvarela/spring-boot-minimal-webapp
+repo name: https://github.com/ucsb-cs56-f19/lab06-edwinvarela
 
 on heroku: https://cs56-f19-lab06-edwinvarela.herokuapp.com
 

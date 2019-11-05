@@ -4,6 +4,7 @@ A simple Spring Boot webapp using:
 * Github OAuth
 
 repo name: https://github.com/edwinvarela/spring-boot-minimal-webapp
+
 on heroku: https://cs56-f19-lab06-edwinvarela.herokuapp.com
 
 # Running on Localhost.

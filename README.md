@@ -3,9 +3,10 @@ A simple Spring Boot webapp using:
 * Pulling in Bootstrap from CDN.
 * Github OAuth
 
-repo name: https://github.com/ucsb-cs56-f19/lab06-edwinvarela
 
-on heroku: https://cs56-f19-lab06-edwinvarela.herokuapp.com
+heroku app: https://cs56-f19-lab07-edwinvarela.herokuapp.com/
+
+link to the web page of documentation: https://ucsb-cs56-f19.github.io/lab07-edwinvarela/
 
 # Running on Localhost.
 

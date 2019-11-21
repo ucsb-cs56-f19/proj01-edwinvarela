@@ -14,35 +14,7 @@ public class FeatureCollection {
     public String type;
 
 
-    public static FeatureCollection fromJSON(String json) {
- 
- 
-    try   {
- 
-           ObjectMapper objectMapper = new ObjectMapper();
- 
-           objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
-
-
- 
-           FeatureCollection featureCollection = objectMapper.readValue(json, FeatureCollection.class);
- 
-           return featureCollection;
- 
-       } catch (JsonProcessingException jpe) {
- 
-           logger.error("JsonProcessingException:" + jpe);
- 
-           return null;
- 
-       } catch (Exception e) {
- 
-           logger.error("Exception:" + e);
- 
-           return null;
- 
-       }
-    }
+   
 }
 
 

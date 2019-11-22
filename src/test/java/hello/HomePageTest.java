@@ -84,4 +84,13 @@ public class HomePageTest {
     }
 
     
+    @Test
+    public void getHomePage_hasCorrectUsr() throws Exception {
+        mvc.perform(MockMvcRequestBuilders.get("/").accept(MediaType.TEXT_HTML))
+                .andExpect(status().isOk())
+                .andExpect(xpath("/html/body/div/nav/div/ul[1]/li[3]/a").exists())
+                .andExpect(xpath("/html/body/div/nav/div/ul[1]/li[3]/a").string("Users"));
+    }
+
+
 }

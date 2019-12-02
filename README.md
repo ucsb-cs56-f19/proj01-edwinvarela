@@ -4,11 +4,11 @@ A simple Spring Boot webapp using:
 * Github OAuth
 
 
-heroku app: https://cs56-f19-lab07-edwinvarela.herokuapp.com/
+heroku app: https://cs56-f19-proj01-edwinvarela.herokuapp.com/
 
 link to the web page of documentation: https://ucsb-cs56-f19.github.io/lab07-edwinvarela/
 
-travis ci: https://travis-ci.org/ucsb-cs56-f19/lab07-edwinvarela
+travis ci: https://travis-ci.org/ucsb-cs56-f19/proj01-edwinvarela/
 
 # Running on Localhost.
 

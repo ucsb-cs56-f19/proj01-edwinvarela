@@ -1,6 +1,8 @@
 /mnt/c/Users/Edwin/Downloads/proj/proj01-edwinvarela/src/main/java/earthquakes/controllers/EarthquakesController.java
 /mnt/c/Users/Edwin/Downloads/proj/proj01-edwinvarela/src/main/java/earthquakes/services/EarthquakeQueryService.java
+/mnt/c/Users/Edwin/Downloads/proj/proj01-edwinvarela/src/main/java/earthquakes/controllers/LocationsController.java
 /mnt/c/Users/Edwin/Downloads/proj/proj01-edwinvarela/src/main/java/earthquakes/searches/EqSearch.java
+/mnt/c/Users/Edwin/Downloads/proj/proj01-edwinvarela/src/main/java/earthquakes/searches/LocSearch.java
 /mnt/c/Users/Edwin/Downloads/proj/proj01-edwinvarela/src/main/java/earthquakes/Application.java
 /mnt/c/Users/Edwin/Downloads/proj/proj01-edwinvarela/src/main/java/earthquakes/repositories/UserRepository.java
 /mnt/c/Users/Edwin/Downloads/proj/proj01-edwinvarela/src/main/java/earthquakes/geojson/Feature.java

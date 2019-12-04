@@ -23,13 +23,7 @@ public class LocationQueryService {
 
     public String getJSON(String location) {
     
-        String fakeJson = "{ \"key\": \"value\" }";
-        String json = fakeJson;
-        logger.info("json=" + json);
-        return json;
-    
-    
-    /*
+
         RestTemplate restTemplate = new RestTemplate();
 
         HttpHeaders headers = new HttpHeaders();
@@ -38,13 +32,11 @@ public class LocationQueryService {
 
         HttpEntity<String> entity = new HttpEntity<>("body", headers);
 
-        String uri = "https://earthquake.usgs.gov/fdsnws/event/1/query";
-        double ucsbLat = 34.4140;
-        double ucsbLong = -119.8489;
-        String params = String.format("?format=geojson&minmagnitude=%d&maxradiuskm=%d&latitude=%f&longitude=%f",
-           minmag,distance,ucsbLat,ucsbLong);
+        String uri = "https://nominatim.openstreetmap.org/search/";
+        String place = location;
+        String formatj = "?format=json";
 
-        String url = uri + params;
+        String url = uri + place + formatj;
         logger.info("url=" + url);
 
         String retVal="";
@@ -58,7 +50,7 @@ public class LocationQueryService {
         }
         logger.info("from EarthquakeQueryService.getJSON: " + retVal);
         return retVal;
-    */
+    
     }
 
 } 

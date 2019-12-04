@@ -46,6 +46,6 @@ public class EarthquakesController {
 
             return "earthquakes/results";
     }
-
+//comment
 
 }

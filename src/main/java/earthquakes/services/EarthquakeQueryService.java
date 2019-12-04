@@ -16,7 +16,7 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.HttpClientErrorException;
-
+//comment
 public class EarthquakeQueryService {
 
     private Logger logger = LoggerFactory.getLogger(EarthquakeQueryService.class);

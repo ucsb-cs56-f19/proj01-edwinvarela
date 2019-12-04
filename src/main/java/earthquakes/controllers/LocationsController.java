@@ -19,6 +19,9 @@ import earthquakes.geojson.FeatureCollection;
 import earthquakes.controllers.LocationsController;
 import com.nimbusds.oauth2.sdk.client.ClientReadRequest;
 
+import earthquakes.osm.Place;
+import java.util.List;
+
 @Controller
 public class LocationsController {
 
@@ -42,6 +45,8 @@ public class LocationsController {
         // TODO: Actually do the search here and add results to the model
         String json = e.getJSON(locSearch.getLocation());
         model.addAttribute("json", json);
+         List<Place> placecollection = Place.listFromJson(json);
+            model.addAttribute("placecollection",placecollection);
         return "locations/results";
     }
 

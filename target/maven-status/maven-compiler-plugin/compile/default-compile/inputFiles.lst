@@ -14,6 +14,8 @@
 /mnt/c/Users/Edwin/Downloads/proj/proj01-edwinvarela/src/main/java/earthquakes/geojson/Properties.java
 /mnt/c/Users/Edwin/Downloads/proj/proj01-edwinvarela/src/main/java/earthquakes/AuthControllerAdvice.java
 /mnt/c/Users/Edwin/Downloads/proj/proj01-edwinvarela/src/main/java/earthquakes/services/GithubOrgMembershipService.java
+/mnt/c/Users/Edwin/Downloads/proj/proj01-edwinvarela/src/main/java/earthquakes/entities/Location.java
+/mnt/c/Users/Edwin/Downloads/proj/proj01-edwinvarela/src/main/java/earthquakes/repositories/LocationRepository.java
 /mnt/c/Users/Edwin/Downloads/proj/proj01-edwinvarela/src/main/java/earthquakes/controllers/HomeController.java
 /mnt/c/Users/Edwin/Downloads/proj/proj01-edwinvarela/src/main/java/earthquakes/entities/AppUser.java
 /mnt/c/Users/Edwin/Downloads/proj/proj01-edwinvarela/src/main/java/earthquakes/services/MembershipService.java

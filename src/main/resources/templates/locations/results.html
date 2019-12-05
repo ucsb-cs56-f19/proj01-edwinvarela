@@ -18,6 +18,8 @@
                 <th>location</th>
                 <td th:text="${locSearch.location}"></td>
             </tr>
+            
+
         </thead>
     </table>
 
@@ -31,7 +33,9 @@
               <th>lat</th>
               <th>lon</th>
               <th>Get Earthquakes</th>
+              <th>Add to favorites</th>
           </tr>
+         
       </thead>
       <tbody>
           <tr th:each="f: ${placecollection}"> 
@@ -41,7 +45,15 @@
               <td th:text="${f.lat}"></td>
               <td th:text="${f.lon}"></td>
               <td><a th:href="@{/earthquakes/search/(lat=${f.lat},lon=${f.lon},location=${f.display_name})}">Get Earthquakes</a></td>
-              
+              <td>
+                <form action="#" th:action="@{/locations/add}"  th:object="${location}"  method="post">
+                  <input type="submit" class="btn btn-primary" value="Add" />
+                  <input type="hidden" name="placeId" th:value="${f.place_id}" value=""/>
+                  <input type="hidden" name="name" th:value="${f.display_name}" value=""/>
+                  <input type="hidden" name="latitude" th:value="${f.lat}" value=""/>
+                  <input type="hidden" name="longitude" th:value="${f.lon}" value=""/>
+                </form>
+              </td>
           </tr>
       </tbody>
   </table>

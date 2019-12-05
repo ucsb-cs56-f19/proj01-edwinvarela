@@ -80,7 +80,7 @@ public class LocationsController {
         Location location = locationRepository.findById(id)
             .orElseThrow(() -> new IllegalArgumentException("Invalid courseoffering Id:" + id));
         locationRepository.delete(location);
-        model.addAttribute("locations", locationRepository.findAll());
+        model.addAttribute("locations", locationRepository.findAll());  
         return "locations/index";
     }
 

@@ -39,14 +39,14 @@ import com.nimbusds.oauth2.sdk.client.ClientReadRequest;
            new EarthquakeQueryService();
 <span class="nc" id="L40">            model.addAttribute(&quot;eqSearch&quot;, eqSearch);</span>
             // TODO: Actually do the search here and add results to the model
-<span class="nc" id="L42">            String json = e.getJSON(eqSearch.getDistance(), eqSearch.getMinmag());</span>
+<span class="nc" id="L42">            String json = e.getJSON(eqSearch.getDistance(), eqSearch.getMinmag(), eqSearch.getLat(), eqSearch.getLon());</span>
 <span class="nc" id="L43">            model.addAttribute(&quot;json&quot;, json);</span>
 <span class="nc" id="L44">            FeatureCollection featureCollection = FeatureCollection.fromJSON(json);</span>
 <span class="nc" id="L45">            model.addAttribute(&quot;featureCollection&quot;,featureCollection);</span>
 
 <span class="nc" id="L47">            return &quot;earthquakes/results&quot;;</span>
     }
-
+//comment
 
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

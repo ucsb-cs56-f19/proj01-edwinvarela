@@ -4,26 +4,55 @@ public class EqSearch{
 
     private int distance;
     private int minmag;
+    private double lat, lon;
+    private String location;
 
-<span class="fc" id="L8">    public EqSearch(){</span>
-<span class="fc" id="L9">        distance = 0;</span>
-<span class="fc" id="L10">        minmag = 0;</span>
-<span class="fc" id="L11">    }</span>
+
+<span class="fc" id="L11">    public EqSearch(){</span>
+<span class="fc" id="L12">        distance = 0;</span>
+<span class="fc" id="L13">        minmag = 0;</span>
+<span class="fc" id="L14">    }</span>
 
     public void setDistance(int x){
-<span class="nc" id="L14">        distance = x;</span>
-<span class="nc" id="L15">    }</span>
+<span class="nc" id="L17">        distance = x;</span>
+<span class="nc" id="L18">    }</span>
 
     public void setMinmag(int x){
-<span class="nc" id="L18">        minmag = x;</span>
-<span class="nc" id="L19">    }</span>
+<span class="nc" id="L21">        minmag = x;</span>
+<span class="nc" id="L22">    }</span>
+
+    public void setLat(double x){
+<span class="nc" id="L25">        lat = x;</span>
+<span class="nc" id="L26">    }</span>
+
+    public void setLon(double x){
+<span class="nc" id="L29">        lon = x;</span>
+<span class="nc" id="L30">    }</span>
+
+    public void setLocation(String x){
+<span class="nc" id="L33">        location = x;</span>
+<span class="nc" id="L34">    }</span>
+
 
     public int getDistance(){
-<span class="fc" id="L22">        return distance;</span>
+<span class="fc" id="L38">        return distance;</span>
     }
 
     public int getMinmag(){
-<span class="fc" id="L26">        return minmag;</span>
+<span class="fc" id="L42">        return minmag;</span>
     }
+
+    public double getLat(){
+<span class="fc" id="L46">        return lat;</span>
+    }
+
+    public double getLon(){
+<span class="fc" id="L50">        return lon;</span>
+    }
+
+    public String getLocation(){
+<span class="fc" id="L54">        return location;</span>
+    }
+
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

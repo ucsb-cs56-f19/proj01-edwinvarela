@@ -18,6 +18,8 @@
                 <th>name</th>
                 <th>latitude</th>
                 <th>longitude</th>
+                <th>Get Earthquake</th>
+                <th>Delete</th>
             </tr>
         </thead>
         <tbody>
@@ -27,6 +29,12 @@
                 <td th:text="${f.name}"></td>
                 <td th:text="${f.latitude}"></td>
                 <td th:text="${f.longitude}"></td>
+                <td><a th:href="@{/earthquakes/search/(lat=${f.latitude},lon=${f.longitude},location=${f.name})}">Get Earthquakes</a></td>
+                <td>
+                  <form th:method="delete" th:action="@{/locations/delete/} + ${f.id}">
+                    <input type="submit" class="btn btn-danger" value="Delete" />
+                  </form>
+                </td>
             </tr>
         </tbody>
     </table>

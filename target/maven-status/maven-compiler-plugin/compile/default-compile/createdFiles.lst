@@ -1,11 +1,13 @@
 earthquakes/entities/AppUser.class
 earthquakes/Application.class
 earthquakes/osm/Place.class
+earthquakes/repositories/LocationRepository.class
 earthquakes/searches/EqSearch.class
 earthquakes/services/MembershipService.class
 earthquakes/services/LocationQueryService.class
 earthquakes/services/GithubOrgMembershipService.class
 earthquakes/searches/LocSearch.class
+earthquakes/entities/Location.class
 earthquakes/controllers/HomeController.class
 earthquakes/geojson/Properties.class
 earthquakes/AuthControllerAdvice.class
